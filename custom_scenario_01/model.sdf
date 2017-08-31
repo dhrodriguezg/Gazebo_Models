@@ -1,0 +1,136 @@
+<?xml version="1.0" ?>
+<sdf version="1.4">
+  <model name="scenario_01">
+
+   <!-- property name="M_PI" value="3.1415926535897931" / -->
+
+    <static>true</static>
+
+    <link name="visuals">
+      <visual name="visual">
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <mesh>
+            <uri>model://custom_scenario_01/meshes/model.dae</uri>
+            <scale>0.7 0.7 0.7</scale>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+
+    <link name="collisions">
+
+      <collision name="collision_01">
+        <pose>0.09492 3.61018 1.18342 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.274701 7.18382 2.369213</size>
+          </box>
+        </geometry>
+      </collision>
+
+      <collision name="collision_02">
+        <pose>3.63538 0.23436 1.18965 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>7.22148 0.436338 2.3807</size>
+          </box>
+        </geometry>
+      </collision>
+
+      <collision name="collision_03">
+        <pose>2.7913256 5.8092636 0.3107412 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.84693 0.85967 0.54286</size>
+          </box>
+        </geometry>
+      </collision>
+
+      <collision name="collision_04">
+        <pose>0.77364 6.27795 0.3107412 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.84693 0.85967 0.54286</size>
+          </box>
+        </geometry>
+      </collision>
+
+      <collision name="collision_05">
+        <pose>0.739893 5.1728649 0.3107412 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.84693 0.85967 0.54286</size>
+          </box>
+        </geometry>
+      </collision>
+
+      <collision name="collision_06">
+        <pose>1.4359975 1.933036 0.3107412 0 0 0.860528</pose>
+        <geometry>
+          <box>
+            <size>0.84693 0.85967 0.54286</size>
+          </box>
+        </geometry>
+      </collision>
+
+      <collision name="collision_07">
+        <pose>1.780548 5.7376074 0.32984 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.6623477 1.775067 0.6610786</size>
+          </box>
+        </geometry>
+      </collision>
+
+      <collision name="collision_08">
+        <pose>3.4871746 1.7417869 0.32984 0 0 1.580775</pose>
+        <geometry>
+          <box>
+            <size>0.6623477 1.775067 0.6610786</size>
+          </box>
+        </geometry>
+      </collision>
+
+      <collision name="collision_09">
+        <pose>1.997744 3.073448 0.828877 0 0 0</pose>
+        <geometry>
+          <cylinder>
+            <radius>0.175</radius>
+            <length>1.659</length>
+          </cylinder>
+        </geometry>
+      </collision>
+
+      <collision name="collision_10">
+        <pose>0.5921517 4.2919044 0.828884 0 0 0</pose>
+        <geometry>
+          <cylinder>
+            <radius>0.175</radius>
+            <length>1.659</length>
+          </cylinder>
+        </geometry>
+      </collision>
+
+      <collision name="collision_11">
+        <pose>3.5442792 2.8995757 0.457373 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>2.2939 0.93443 0.916146</size>
+          </box>
+        </geometry>
+      </collision>
+
+      <collision name="collision_12">
+        <pose>4.88656 2.898399 0.34 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.3783584 0.90412 0.6</size>
+          </box>
+        </geometry>
+      </collision>
+
+    </link>
+
+  </model>
+</sdf>

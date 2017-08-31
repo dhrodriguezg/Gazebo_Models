@@ -1,0 +1,106 @@
+<?xml version="1.0" ?>
+<sdf version="1.4">
+  <model name="scenario_02">
+    <static>true</static>
+
+    <link name="visuals">
+      <visual name="visual">
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <mesh>
+            <uri>model://custom_scenario_02/meshes/model.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+
+
+    <!-- link name="collisions">
+
+      <collision name="collision_01">
+        <pose>0.327326 5.299 0.297237 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>6.64359 0.525589 0.596482</size>
+          </box>
+        </geometry>
+      </collision>
+
+      <collision name="collision_02">
+        <pose>-3.073368 0.336239 2.068562 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.165206 10.3904 4.14033</size>
+          </box>
+        </geometry>
+      </collision>
+
+      <collision name="collision_03">
+        <pose>1.07736 -4.614122 0.716225 0 0 0</pose>
+        <geometry>
+          <cylinder>
+            <radius>0.1</radius>
+            <length>1.43</length>
+          </cylinder>
+        </geometry>
+      </collision>
+
+      <collision name="collision_04">
+        <pose>-2.08095 -4.614122 0.716225 0 0 0</pose>
+        <geometry>
+          <cylinder>
+            <radius>0.1</radius>
+            <length>1.43</length>
+          </cylinder>
+        </geometry>
+      </collision>
+
+      <collision name="collision_05">
+        <pose>0.944658 -0.314345 0.385575 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>2.97888 1.20012 0.773151</size>
+          </box>
+        </geometry>
+      </collision>
+
+      <collision name="collision_06">
+        <pose>0.164847 -2.727318 0.25235 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.652542 1.606310 0.506701</size>
+          </box>
+        </geometry>
+      </collision>
+
+      <collision name="collision_07">
+        <pose>-0.472378 -4.673145 0.314215 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>2.50896 0.487343 0.630430</size>
+          </box>
+        </geometry>
+      </collision>
+
+      <collision name="collision_08">
+        <pose>-0.467171 -4.669784 1.129423 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>1.37726 0.112050 0.929945</size>
+          </box>
+        </geometry>
+      </collision>
+
+      <collision name="collision_09">
+        <pose>0.954853 0.371423 0.464212 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>2.25083 0.170859 0.930424</size>
+          </box>
+        </geometry>
+      </collision>
+
+    </link -->
+
+  </model>
+</sdf>

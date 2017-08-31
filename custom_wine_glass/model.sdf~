@@ -1,0 +1,38 @@
+<?xml version="1.0" ?>
+<sdf version="1.4">
+  <model name="wine_glass">
+    <link name="link">
+
+      <inertial>
+        <pose>0 0 0.0 0 0 0</pose>
+        <mass>0.3</mass>
+        <inertia>
+          <ixx>0.00469225</ixx>
+          <ixy>0.00469225</ixy><iyy>0.0</iyy>
+          <ixz>0.00626477</ixz><iyz>0.0</iyz><izz>0.0</izz>
+        </inertia>
+      </inertial>
+
+
+      <visual name="visual">
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <mesh>
+            <uri>model://custom_wine_glass/meshes/model.dae</uri>
+            <scale>0.3 0.3 0.3</scale>
+          </mesh>
+        </geometry>
+      </visual>
+
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <uri>model://custom_wine_glass/meshes/model.dae</uri>
+            <scale>0.3 0.3 0.3</scale>
+          </mesh>
+        </geometry>
+      </collision>
+
+    </link>
+  </model>
+</sdf>
