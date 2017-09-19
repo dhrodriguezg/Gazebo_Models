@@ -1,0 +1,68 @@
+<?xml version="1.0" ?>
+<sdf version="1.4">
+  <model name="custom_lamp">
+
+    <static>false</static>
+
+    <link name="link">
+
+      <inertial>
+        <pose>0 0 0 0 0 0</pose>
+        <mass>0.2</mass>
+        <inertia>
+          <ixx>10</ixx><ixy>0</ixy><ixz>0</ixz>
+          <iyy>10</iyy><iyz>0</iyz>
+          <izz>1</izz>
+        </inertia>
+      </inertial>
+
+      <visual name="visual">
+        <pose>0 0 0 0 0 -1.5708</pose>
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <mesh>
+            <uri>model://custom_lamp/meshes/model.dae</uri>
+            <scale>0.07 0.07 0.07</scale>
+          </mesh>
+        </geometry>
+      </visual>
+
+      <collision name="collision_base">
+        <pose>0 0 0.018226 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.25 0.25 0.03</size>
+          </box>
+        </geometry>
+      </collision>
+
+      <collision name="collision_joint_01">
+        <pose>-0.010369 -0.048786 0.058344 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.021862 0.01477 0.050717</size>
+          </box>
+        </geometry>
+      </collision>
+
+      <collision name="collision_joint_02">
+        <pose>-0.010369 -0.086671 0.105499 1.024687 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.021862 0.01477 0.101128</size>
+          </box>
+        </geometry>
+      </collision>
+
+      <collision name="collision_joint_03">
+        <pose>-0.010369 -0.058442 0.156533 1.951694 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.021862 0.01477 0.138692</size>
+          </box>
+        </geometry>
+      </collision>
+
+    </link>
+  </model>
+</sdf>

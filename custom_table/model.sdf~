@@ -1,0 +1,86 @@
+<?xml version="1.0" ?>
+<sdf version="1.4">
+  <model name="table">
+
+    <static>false</static>
+
+    <link name="link">
+
+      <inertial>
+        <pose>0 0 0 0 0 0</pose>
+        <mass>1</mass>
+        <inertia>
+          <ixx>10</ixx><ixy>0</ixy><ixz>0</ixz>
+          <iyy>10</iyy><iyz>0</iyz>
+          <izz>1</izz>
+        </inertia>
+      </inertial>
+
+      <visual name="visual">
+        <pose>-0.05 0.05 0 0 0 0</pose>
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <mesh>
+            <uri>model://custom_table/meshes/model.dae</uri>
+            <scale>0.2 0.2 0.2</scale>
+          </mesh>
+        </geometry>
+      </visual>
+
+      <collision name="collision_stick_01">
+        <pose>-0.046924 -0.053794 0.058451 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.007356 0.007005 0.116773</size>
+          </box>
+        </geometry>
+      </collision>
+
+      <collision name="collision_stick_02">
+        <pose>-0.046924 0.04653 0.058451 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.007356 0.007005 0.116773</size>
+          </box>
+        </geometry>
+      </collision>
+
+      <collision name="collision_stick_03">
+        <pose>0.053471 0.04653 0.058451 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.007356 0.007005 0.116773</size>
+          </box>
+        </geometry>
+      </collision>
+
+      <collision name="collision_stick_03">
+        <pose>0.053471 -0.053256 0.058451 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.007356 0.007005 0.116773</size>
+          </box>
+        </geometry>
+      </collision>
+
+      <collision name="collision_top">
+        <pose>0.004 -0.004 0.118734 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.1145 0.1145 0.018</size>
+          </box>
+        </geometry>
+      </collision>
+
+      <collision name="collision_bottom">
+        <pose>0.004 -0.004 0.01 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.1145 0.1145 0.018</size>
+          </box>
+        </geometry>
+      </collision>
+
+    </link>
+  </model>
+</sdf>

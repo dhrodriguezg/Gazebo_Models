@@ -1,0 +1,49 @@
+<?xml version="1.0" ?>
+<sdf version="1.4">
+  <model name="lego_guy">
+
+    <link name="link">
+
+      <inertial>
+        <pose>0 0 0 0 0 0</pose>
+        <mass>0.2</mass>
+        <inertia>
+          <ixx>10</ixx><ixy>0</ixy><ixz>0</ixz>
+          <iyy>10</iyy><iyz>0</iyz>
+          <izz>1</izz>
+        </inertia>
+      </inertial>
+
+      <visual name="visual">
+        <pose>-0.2 0.5475 0 0 0 -1.57756</pose>
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <mesh>
+            <uri>model://custom_lego_guy/meshes/model.dae</uri>
+            <scale>0.05 0.05 0.05</scale>
+          </mesh>
+        </geometry>
+      </visual>
+
+
+      <collision name="collision_body">
+        <pose>0 0 0.062855 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.039020 0.125596 0.125310</size>
+          </box>
+        </geometry>
+      </visual>
+
+      <collision name="collision_head">
+        <pose>0 0 0.144398 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.046751 0.047837 0.034897</size>
+          </box>
+        </geometry>
+      </visual>
+
+    </link>
+  </model>
+</sdf>
